@@ -1,0 +1,364 @@
+/* 清除預設格式 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 清除完成 */
+.wrap{
+    margin: 0 auto;
+    width: auto;
+    font-family: "微軟正黑體";
+    position: relative;
+}
+
+
+
+/* linkbar */
+.linkbar{
+    display: block;
+    /* border: 1px black solid; */
+    background: rgb(219, 215, 215);
+}
+.linkbarwrap{
+    float: right;
+    margin: 10px 0px;
+}
+.linkbar img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5px;
+}
+.linkbar a{
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(55, 164, 228);
+    line-height: 25px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+.linkbar a:hover{
+    color: rgb(50, 50, 129);
+}
+
+
+
+
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.schoollogo{
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 10px;
+    width: 300px;
+    display: block;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.pagbox{
+    display: flex;
+    position: relative;
+}
+.pagbox1{
+    padding: 30px;
+}
+.pagbox1inner{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 27px;
+    padding-bottom: 22px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(92, 201, 146);
+}
+.pagbox1inner:hover{
+    border-bottom: 4px rgb(92, 201, 146) solid;
+    transform: translateX(100%);
+}
+.pagbox2{
+    position: absolute;
+    top:100%;
+    z-index: 2;
+    display: none;
+}
+.pagbox2 li{
+    width: 150px;
+}
+.pagbox2 a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20% 0px;
+    color: black;
+    background-color:rgb(196, 224, 210) ;
+    opacity: 0.9;
+}
+.pagbox2 a:hover{
+    background: rgb(196, 224, 210);
+    opacity: 1;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+
+
+
+
+/* content */
+
+
+
+/* swiper */
+.banner{
+    width:100%;
+    height: 100%;
+}
+.banner2{
+    width:100%;
+    height: 700px;
+}
+
+.swiper{
+    position: relative;
+}
+.bannerinner{
+    position: absolute;
+    top:35%;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    padding: 3% 1%;
+    color: white;
+    background:rgba(2, 2, 2, 0.3);
+    z-index: 1;
+    font-size: 40px;
+}
+.bannerinner span{
+    display: block;
+}
+
+
+
+/* oures Introduction */
+.table2{
+    display: flex;
+    justify-content: center;
+}
+.table2inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 23.4%;
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 10px 20px;
+}
+.table2inner h3{
+    font-weight: bold;
+    text-align: center;
+}
+.table2inner p{
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+}
+.table3{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    list-style-type: disc;
+}
+
+
+
+/* ourse Compare table */
+.table4{
+    text-align: center;
+}
+.table4 h2{
+    font-size: 30px;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+.table4 table{
+    width: 80%;
+    margin: 0 auto;
+}
+.table4 th,.table4 td{
+    text-align: left;
+    padding: 10px 0px;
+    padding-right:90px;
+}
+.table4 th{
+    font-weight: bold;
+    font-size: 20px;
+    background: rgb(245, 241, 241);
+}
+.table4 td{
+    font-size: 16px;
+}
+.table4focus{
+    color: rgb(45, 189, 141);
+}
+
+
+
+
+
+
+
+/* datainput */
+.inputbox{
+    text-align: center;
+    background: rgb(47, 129, 83);
+    margin-top: 20px;
+    padding: 40px 0px;
+}
+.inputbox h2{
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+}
+.inputbox1{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.inputbox1 textarea{
+    width: 450px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputbox2{
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.inputbox2 input{
+    display: block;
+    width: 300px;
+    margin: 7px 0px;
+    padding: 6px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+}
+.inputbox2submit{
+    float: right;
+    width: 70px !important;
+    color: white;
+    background: rgb(83, 190, 119);
+    cursor: pointer;
+}
+.inputbox2submit:hover{
+    color: black;
+    box-shadow: 1px 3px 5px black;
+}
+
+
+/* footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 36px;
+}
+.footerlogo{
+    background-image: url(../img/footerLogo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 224px;
+    height: 50px;
+    display: block;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.contact p{
+    line-height: 25px;
+}
+.contact a{
+    text-decoration: none;
+    color: crimson;
+}
+.contact a:hover{
+    color: rgb(50, 50, 129);
+}
+
+
+/* fixedtop */
+.fixedtop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+.btn1{
+    background-image: url(../img/fixedtop.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:64px;
+    height: 64px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
