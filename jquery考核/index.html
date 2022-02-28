@@ -16,6 +16,7 @@
     <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="shortcut icon" href="img/logoicon.png">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- javascript -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -28,8 +29,8 @@
         
         <div class="linkbar">
             <div class="linkbarwrap">
-                <a href="#" style="border-right: 1px gray solid;"><img src="img/facebookIcon.png" alt="">粉絲團</a>
-                <a href="#"><img src="img/twitterIcon.png" alt="">追隨我們</a>
+                <a href="#" style="border-right: 1px gray solid;" class="animate__animated animate__flipInX"><img src="img/facebookIcon.png" alt="">粉絲團</a>
+                <a href="#"  class="animate__animated animate__flipInX"><img src="img/twitterIcon.png" alt="">追隨我們</a>
             </div>
             <div style="clear: both;"></div>
         </div>
@@ -38,8 +39,8 @@
         <div class="header">
             <a href="#" class="schoollogo">六角學院</a>
             <ul class="pagbox">
-                <li class="pagbox1"><a href="#" class="pagbox1inner">首頁</a></li>
-                <li class="pagbox1">
+                <li class="pagbox1 animate__animated animate__backInLeft" id="animate__backInLeft1"><a href="#" class="pagbox1inner">首頁</a></li>
+                <li class="pagbox1 animate__animated animate__backInLeft" id="animate__backInLeft2">
                     <a href="#" class="pagbox1inner">產品介紹</a>
                     <ul class="pagbox2">
                         <li><a href="#">課程A</a></li>
@@ -47,7 +48,7 @@
                         <li><a href="#">課程C</a></li>
                     </ul>
                 </li>
-                <li class="pagbox1">
+                <li class="pagbox1 animate__animated animate__backInLeft" id="animate__backInLeft3">
                     <a href="#" class="pagbox1inner">聯繫我們</a>
                     <ul class="pagbox2">
                         <li><a href="#">聯繫方式A</a></li>
@@ -83,7 +84,7 @@
                 <!-- If we need pagination 分頁 -->
                 <div class="swiper-pagination"></div>
                 <!-- 絕對定位for swiper -->
-                <p class="bannerinner">六角學院
+                <p class="bannerinner animate__animated animate__backInRight">六角學院
                     <span>讓您奠定好的前端基礎</span>
                 </p>
             </div>
@@ -93,7 +94,7 @@
             <div class="table">
                 <ul class="table2">
                     <li class="table2inner">
-                       <a class="example-image-link" href="img/html.png" data-lightbox="example-1" data-title="Html5">
+                       <a class="example-image-link" href="img/html.png" data-lightbox="example-1">
                         <img class="example-image" src="img/html.png" alt="HTML" />
                         </a>
                         <div class="table2innerlayout">
@@ -102,7 +103,7 @@
                         </div>
                     </li>
                     <li class="table2inner">
-                        <a class="example-image-link" href="img/rwd.png" data-lightbox="example-1" data-title="RWD">
+                        <a class="example-image-link" href="img/rwd.png" data-lightbox="example-1">
                         <img class="example-image" src="img/rwd.png" alt="RWD"/>
                         </a>
                         <div class="table2innerlayout">
@@ -111,7 +112,7 @@
                         </div>
                     </li>
                     <li class="table2inner">
-                        <a class="example-image-link" href="img/jQuery.png" data-lightbox="example-1" data-title="JQuery">
+                        <a class="example-image-link" href="img/jQuery.png" data-lightbox="example-1">
                         <img class="example-image" src="img/jQuery.png" alt="jQuery" />
                         </a>
                         <div class="table2innerlayout">
