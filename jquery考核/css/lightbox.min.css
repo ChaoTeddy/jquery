@@ -44,7 +44,7 @@ body.lb-disable-scrolling{
 }
 .lb-outerContainer:after{
     content:"";
-    display:table;
+    display:block;
     clear:both
 }
 .lb-loader{
@@ -80,12 +80,13 @@ body.lb-disable-scrolling{
     display:block
 }
 .lb-nav a.lb-prev{
-    width:34%;
+    width:20%;
     left:0;
     float:left;
     background:url(../img/lightbox/prev.png) left 48% no-repeat;
+    background-size: 100%;
     filter:alpha(Opacity=0);
-    opacity:0;
+    opacity:0.3;
     -webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s
 }
 .lb-nav a.lb-prev:hover{
@@ -93,11 +94,13 @@ body.lb-disable-scrolling{
     opacity:1
 }
 .lb-nav a.lb-next{
-    width:64%;
+    width:20%;
     right:0;
     float:right;
-    background:url(../img/lightbox/next.png) right 48% no-repeat;filter:alpha(Opacity=0);
-    opacity:0;
+    background:url(../img/lightbox/next.png) right 48% no-repeat;
+    background-size: 100%;
+    filter:alpha(Opacity=0);
+    opacity:0.3;
     -webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s
 }
 .lb-nav a.lb-next:hover{
@@ -114,19 +117,23 @@ body.lb-disable-scrolling{
 .lb-dataContainer:after{
     content:"";
     display:table;
-    clear:both}.lb-data{padding:0 4px;
-    color:#ccc
+    clear:both
+}
+
+
+.lb-data{
+    padding:0 4px;
 }
 .lb-data .lb-details{
-    width:85%;
+    width:100%;
     float:left;
-    text-align:left;
-    line-height:1.1em
+    /* text-align:left; */
+    line-height:1em
 }
 .lb-data .lb-caption{
-    font-size:13px;
-    font-weight:700;
-    line-height:1em
+    font-size:15px;
+    font-weight:bold;
+    /* line-height:1em */
 }
 .lb-data .lb-caption a{
     color:#4ae
@@ -136,18 +143,19 @@ body.lb-disable-scrolling{
     clear:left;
     padding-bottom:1em;
     font-size:10px;
-    color:black
+    color:gray;
 }
 .lb-data .lb-close{
     display:block;
     float:right;
-    width:30px;
-    height:30px;
+    width: 20px;
+    height:20px;
     background:url(../img/lightbox/close.png) top right no-repeat;
+    background-size: 100%;
     text-align:right;
     outline:0;
-    filter:alpha(Opacity=70);
-    opacity:.7;
+    filter:alpha(Opacity=50);
+    opacity: 0.5;
     -webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s
 }
 .lb-data .lb-close:hover{
