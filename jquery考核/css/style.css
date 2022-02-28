@@ -107,7 +107,6 @@ table {
 }
 .pagbox1{
     padding: 30px;
-    position: relative;
 }
 .pagbox1inner{
     /* border: 1px black solid; */
@@ -119,27 +118,45 @@ table {
     text-decoration: none;
     font-size: 24px;
     color: rgb(92, 201, 146);
-    /* border: none; */
+    position: relative;
 }
-
-
-
-/* menu底線 */
-.pagbox1inner::after {
+/* .pagbox1inner:hover{
+    border-bottom: 4px rgb(92, 201, 146) solid;
+    transform: translateX(100%);
+} */
+/* menu底線動畫效果 */
+.pagbox1inner::after{
     content: "";
-    width: 80%;
-    border-bottom: 4px solid #00cc99;
     position: absolute;
-    bottom:0;
-    left: 20px;
+    bottom: -4px;
+    left:0;
+    /* right:0; */
+    border-bottom: 5px rgb(92, 201, 146) solid;
+    transition: all 1s;
     transform: scale(0);
-    transition: 1s;
 }
-
-.pagbox1inner:hover::after {
-transform: scale(1);
+.pagbox1inner:hover::after{
+    width: 100%;
+    transition: all 1s;
+    transform: scale(1);
 }
-/* menu底線 */
+/* animate */
+.animate__animated.animate__flipInX{
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+#animate__backInLeft1{
+    animation-delay: 0.2s;
+}
+#animate__backInLeft2{
+    animation-delay: 0.4s;
+}
+#animate__backInLeft3{
+    animation-delay: 0.6s;
+}
+.animate__animated.animate__backInRight{
+    animation-delay: 2s;
+}
 
 
 
@@ -224,7 +241,19 @@ transform: scale(1);
     margin-right: 20px;
     margin-top: 40px;
     padding: 10px 20px;
+    background: white;
+    transition:all 0.5s ease 0s ;
+    transform: scale(1);
 }
+.table2inner:hover{
+    transition:all 0.5s ease 0s ;
+    transform: scale(1.1);
+    background: white;
+    z-index: 1;
+    filter: drop-shadow(1px 1px 5px black );
+}
+
+
 .table2inner h3{
     font-weight: bold;
     text-align: center;
@@ -245,7 +274,11 @@ transform: scale(1);
 
 /* ourse Compare table */
 .table4{
+    /* border: 1px black solid; */
     text-align: center;
+    overflow-y:scroll;
+    height: 300px;
+    margin: 20px 207px;
 }
 .table4 h2{
     font-size: 30px;
@@ -253,7 +286,7 @@ transform: scale(1);
     font-weight: bold;
 }
 .table4 table{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 .table4 th,.table4 td{
@@ -366,13 +399,11 @@ transform: scale(1);
 }
 
 
-
 /* fixedtop */
 .fixedtop{
     position: fixed;
     right: 20px;
     bottom: 20px;
-    z-index: 10;
 
 }
 .btn1{
@@ -384,4 +415,11 @@ transform: scale(1);
     cursor: pointer;
     border: none;
     border-radius: 50%;
+    transition: all 0.2s ease 0s;
+    transform:scale(0.8);
+}
+.btn1:hover{
+    transition: all 0.2s ease 0s;
+    transform:scale(0.9) rotate(360deg);
+    filter: drop-shadow(1px 1px 20px black);
 }
